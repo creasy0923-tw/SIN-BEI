@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>身體裡的超級特攻隊：手榴彈 vs. 精準鑰匙</title>
+    <style>
+        /* 基礎設定 */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, "微軟正黑體", sans-serif;
+            background-color: #f4f9f9;
+            color: #333;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 標題區塊 */
+        header {
+            background-color: #ffbba6;
+            background-image: linear-gradient(120deg, #ffbba6 0%, #ffcda5 100%);
+            color: #5d4037;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 5px dashed #fff;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 2px 2px 0px #fff;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #d84315;
+            margin-top: 10px;
+        }
+
+        /* 主要內容容器 */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* 卡片共用樣式 */
+        .card {
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border: 4px solid transparent;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .card-icon {
+            font-size: 2.5em;
+            margin-right: 15px;
+        }
+
+        .card h2 {
+            margin: 0;
+            font-size: 1.6em;
+            color: #444;
+        }
+
+        /* 各區塊專屬配色 */
+        .chemo-card {
+            border-color: #ffccbc;
+            background-image: linear-gradient(to bottom, #fff, #fff9f7);
+        }
+        .chemo-card h2 { color: #d84315; }
+
+        .targeted-card {
+            border-color: #b2ebf2;
+            background-image: linear-gradient(to bottom, #fff, #f4fcfe);
+        }
+        .targeted-card h2 { color: #00838f; }
+
+        .combo-card {
+            border-color: #ffe082;
+            background-image: linear-gradient(to bottom, #fff, #fffdf5);
+        }
+        .combo-card h2 { color: #f57f17; }
+
+        /* 對話框樣式 (講者台詞) */
+        .speech-bubble {
+            background-color: #f0f0f0;
+            border-radius: 15px;
+            padding: 20px;
+            position: relative;
+            margin-top: 15px;
+            font-size: 1.1em;
+            border-left: 6px solid #ccc;
+        }
+
+        .chemo-bubble { border-left-color: #ff8a65; background-color: #fff3e0; }
+        .targeted-bubble { border-left-color: #4dd0e1; background-color: #e0f7fa; }
+        .combo-bubble { border-left-color: #ffd54f; background-color: #fff8e1; }
+
+        .slide-note {
+            display: inline-block;
+            background-color: #607d8b;
+            color: white;
+            font-size: 0.8em;
+            padding: 3px 10px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        /* 重點標示 */
+        .highlight-list {
+            background-color: #fff;
+            border: 2px dashed #ffab91;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .highlight-list li {
+            margin-bottom: 10px;
+        }
+
+        /* 結尾區塊 */
+        .footer-card {
+            text-align: center;
+            background-color: #c8e6c9;
+            border-color: #81c784;
+        }
+
+        .footer-card h2 { color: #2e7d32; }
+        
+        .cheer-icon {
+            font-size: 4em;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* 響應式設計 */
+        @media (max-width: 600px) {
+            h1 { font-size: 2em; }
+            .card { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🛡️ 身體裡的超級特攻隊 🛡️</h1>
+        <div class="subtitle">打敗癌細胞怪獸：手榴彈 vs. 精準鑰匙</div>
+    </header>
+
+    <div class="container">
+
+        <div class="card chemo-card">
+            <div class="card-header">
+                <div class="card-icon">💣</div>
+                <h2>第一部分：無差別轟炸——化療手榴彈</h2>
+            </div>
+            
+            <div class="slide-note">👉 (簡報切換至『互動Q&A：卡片1-比喻』圖卡)</div>
+            <div class="speech-bubble chemo-bubble">
+                <p>「首先，我們來看第一種武器，它叫『化學治療』，簡稱化療。</p>
+                <p>有沒有聽過『炸魚』？化療就像醫生丟出一顆手榴彈到癌細胞怪獸最愛聚集的地方。手榴彈一爆炸，威力很強大，轟！癌細胞怪獸就被炸死很多。但是，問題來了……</p>
+                <p>手榴彈爆炸時，它不會看你是壞人還是好人。只要在爆炸範圍內，不管你是怪獸，還是努力工作的平民細胞，統統都會被炸傷。這就是化療的戰鬥方式：<strong>『無差別轟炸』</strong>。」</p>
+            </div>
+
+            <div class="slide-note" style="margin-top: 20px;">👉 (簡報切換至『互動Q&A：卡片2-副作用』圖卡)</div>
+            <div class="speech-bubble chemo-bubble">
+                <p>「這就是為什麼有時候我們看到接受化療的人會掉頭髮、想吐。</p>
+                <p>為什麼呢？因為癌細胞怪獸有一個特性，就是<strong>『分裂得超級快』</strong>，就像每天都在瘋狂影印自己。化療手榴彈的目標，就是去炸這些『影印得超級快』的細胞。</p>
+                <p>但是，我們身體裡也有很多『努力工作的好細胞』也印得很快，例如：</p>
+                <ul class="highlight-list">
+                    <li>💇‍♂️ <strong>毛囊細胞：</strong> 為了讓頭髮長長，它們印得很勤快。（講者摸摸自己的頭髮）結果，它們慘遭手榴彈誤炸，頭髮就掉了。</li>
+                    <li>🤢 <strong>腸胃細胞：</strong> 為了消化食物，它們也常常在更新。結果，它們也被誤炸，所以人就會覺得想吐。</li>
+                </ul>
+                <p>這就是化療辛苦的地方，雖然打敗了敵人，但自己也受傷了。」</p>
+            </div>
+        </div>
+
+        <div class="card targeted-card">
+            <div class="card-header">
+                <div class="card-icon">🔑</div>
+                <h2>第二部分：精準一擊——標靶鑰匙</h2>
+            </div>
+
+            <div class="slide-note">👉 (簡報切換至『互動Q&A：卡片3-精準』圖卡)</div>
+            <div class="speech-bubble targeted-bubble">
+                <p>「科學家們看到化療讓身體這麼辛苦，就很努力想發明一種更聰明的武器。終於，他們成功了！這就是『標靶治療』。</p>
+                <p>有沒有看過超級英雄電影？標靶治療不是用炸的，它就像是神槍手，或者說是一把<strong>精準鑰匙</strong>。</p>
+                <p>壞人癌細胞怪獸身上，其實有一些『特殊的記號』或『特殊的開關』，這就像是一把把特別的鎖。標靶藥物這把『鑰匙』，只認得這種『特殊的鎖』。</p>
+                <p>當它插進鎖裡，就能精準地關掉怪獸的生長開關，或者呼叫我們身體的警察（免疫細胞）來抓怪獸，<strong>完全不會傷害到旁邊沒有這種鎖的正常平民細胞</strong>。」</p>
+            </div>
+
+            <div class="slide-note" style="margin-top: 20px;">👉 (簡報切換至『互動Q&A：卡片4-生物標記』圖卡)</div>
+            <div class="speech-bubble targeted-bubble">
+                <p>「但是，標靶藥物這把鑰匙不是隨便亂插的喔！</p>
+                <p>在治療之前，醫生會先做<strong>生檢</strong>（就像是用放大鏡在怪獸身上找證據），去找癌細胞怪獸身上到底有沒有那種『特殊的鎖』（醫學上叫生物標記）。這就像是檢查敵人的『身分證』。</p>
+                <p>確認了這隻怪獸身上有特定的鎖（例如：癌細胞的油門開關），醫生才能選對那把能卡住開關的精準鑰匙，讓治療百分之百成功！」</p>
+            </div>
+        </div>
+
+        <div class="card combo-card">
+            <div class="card-header">
+                <div class="card-icon">🦸‍♂️</div>
+                <h2>第三部分：組合技——超級特攻隊</h2>
+            </div>
+
+            <div class="slide-note">👉 (簡報切換至『互動Q&A：卡片5-組合』圖卡)</div>
+            <div class="speech-bubble combo-bubble">
+                <p>「最後一個問題：『標靶治療這麼好，為什麼醫生有時還要合併化療一起用？』</p>
+                <p>因為，癌細胞怪獸非常聰明而且狡猾！它們有時候會『進化』，例如換了一把新鎖，或者變得更頑強。這時候，醫生就會派出我們的身體超級特攻隊！</p>
+                <ol style="font-weight: bold; color: #d84315;">
+                    <li>🔑 標靶鑰匙先上場，精準地殺死大部分的敵人。</li>
+                    <li>💣 剩下的那些狡猾怪獸（比如換了鎖的），醫生就會再補上一顆化療手榴彈，或者利用兩種武器的火力把敵人徹底消滅。</li>
+                </ol>
+                <p>這就是現代醫療最厲害的戰術——<strong>『組合拳』</strong>！」</p>
+            </div>
+        </div>
+
+        <div class="card footer-card">
+            <div class="slide-note">👉 (簡報顯示一張可愛的健康細胞歡呼圖片)</div>
+            <div class="cheer-icon">🙌✨🙌</div>
+            <h2>結尾：好好愛護身體大樓</h2>
+            <div class="speech-bubble" style="text-align: left;">
+                <p>「這就是我們身體裡的精彩戰鬥！雖然我們今天學的是深奧的醫學知識，但其實它們都可以用有趣的對比和生活中的東西來比喻。</p>
+                <p>科學家們每天都在研究更厲害的武器，想要更溫柔、更精準地打敗癌症。今天的故事有沒有讓大家覺得身體的戰鬥很有趣呢？</p>
+                <p>希望今天的介紹能引起大家的興趣，也希望大家從現在開始，要好好愛護自己的身體大樓，讓我們身體裡的『警察（免疫系統）』一直都很強壯！謝謝大家！」</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
